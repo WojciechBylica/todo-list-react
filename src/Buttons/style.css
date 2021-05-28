@@ -1,0 +1,34 @@
+.buttons__additionalButton {
+    border: none;
+    background: white;
+    color: teal;
+    grid-gap: 20px;
+    transition: 1s;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.buttons__additionalButton:focus {
+    color: rgb(7, 197, 197);
+}
+
+.buttons__additionalButton:hover {
+    color: rgb(8, 182, 182);
+}
+
+.buttons__additionalButton:disabled {
+    color: grey;
+    cursor: unset;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: 500px) {
+    .buttons {
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+}

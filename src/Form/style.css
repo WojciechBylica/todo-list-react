@@ -1,0 +1,40 @@
+.form {
+    padding: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form__input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #80808040;
+    border-radius: 1px;
+}
+
+.form__button {
+    background: teal;
+    color: white;
+    padding: 10px;
+    margin: 0px 0px 0px 15px;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.form__button:focus {
+    background: rgb(3, 184, 184);
+    transform: scale(1.1);
+}
+
+.form__button:hover {
+    background: rgb(2, 156, 156);
+}
+
+@media(max-width: 500px) {
+    .form__button {
+        flex-basis: 100%;
+        margin: 7px 0px;
+    }
+}

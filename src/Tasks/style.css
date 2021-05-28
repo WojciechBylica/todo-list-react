@@ -1,0 +1,60 @@
+.tasks {
+    padding: 20px 0px;
+    margin: 0px;
+    background: white;
+}
+
+.tasks__item {
+    display: flex;
+    margin: 0px 15px;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid #80808040;
+    word-break: break-word;
+}
+
+.tasks__item--hidden {
+    display: none;
+}
+
+.tasks__div--done {
+    text-decoration: line-through;
+}
+
+.tasks__div {
+    padding: 0px 10px;
+    flex-grow: 1;
+    color: #565555;
+}
+
+.tasks__button {
+    background: green;
+    border: none;
+    width: 27px;
+    height: 27px;
+    padding: 5px;
+    color: white;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.tasks__button:focus {
+    background: rgb(5, 175, 5);
+}
+
+.tasks__button:hover {
+    background: rgb(5, 175, 5);
+}
+
+.tasks__button--remove {
+    background: red;
+}
+
+.tasks__button--remove:focus {
+    background: rgb(236, 128, 128);
+}
+
+.tasks__button--remove:hover {
+    background: rgb(248, 90, 90);
+}
