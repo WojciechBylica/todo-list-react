@@ -1,5 +1,11 @@
 # Task list.
 
+## Demo.
+https://wojciechbylica.github.io/todo-list-react/
+
+## Repo.
+https://github.com/WojciechBylica/todo-list-react
+
 ### Description.
 
 Simple List Of Things To Do is HTML page created as a homework during Frotend Developing Course in U-Code school. It allows You to:
