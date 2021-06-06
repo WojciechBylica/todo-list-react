@@ -16,7 +16,7 @@ const Tasks = ({ tasks, hideDoneTasks }) => (
                 </div>
                 <button className="tasks__button tasks__button--remove">
                     &#128465;
-                    </button>
+                </button>
             </li>
         ))}
     </ul>

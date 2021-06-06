@@ -39,7 +39,7 @@
     transition: 0.5s;
 }
 
-.tasks__button:focus {
+.tasks__button:active {
     background: rgb(5, 175, 5);
 }
 

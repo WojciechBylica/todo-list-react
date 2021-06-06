@@ -8,7 +8,7 @@
     cursor: pointer;
 }
 
-.buttons__additionalButton:focus {
+.buttons__additionalButton:active {
     color: rgb(7, 197, 197);
 }
 

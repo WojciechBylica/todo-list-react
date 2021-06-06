@@ -23,13 +23,14 @@
     transition: 1s;
 }
 
-.form__button:focus {
+.form__button:active {
     background: rgb(3, 184, 184);
-    transform: scale(1.1);
+    
 }
 
 .form__button:hover {
     background: rgb(2, 156, 156);
+    transform: scale(1.1);
 }
 
 @media(max-width: 500px) {

@@ -9,23 +9,17 @@ const Buttons = ({ tasks, hideDoneTasks }) => (
                 <button className={`buttons__additionalButton ${tasks.some(({ done }) => done) ? "" : "disabled"}`}
                 >
                     {tasks.some(({ done }) => done) ? `${hideDoneTasks ? "Pokaż" : "Ukryj"}` : "Ukryj"} ukończone
-                 </button>
+                </button>
 
                 <button
                     className="buttons__additionalButton"
                     disabled={tasks.every(({ done }) => done)}
                 >
                     Ukończ wszystkie
-                 </button>
+                </button>
             </>
         )}
     </div>
-
-
 )
-
-
-
-
 
 export default Buttons;
