@@ -1,14 +1,14 @@
 import React from "react";
 import "./style.css";
 
-const Buttons = ({ tasks, hideDoneTasks }) => (
+const Buttons = ({ tasks, hideDone, toggleHideDone }) => (
 
     <div className="buttons">
         {tasks.length > 0 && (
             <>
-                <button className={`buttons__additionalButton ${tasks.some(({ done }) => done) ? "" : "disabled"}`}
+                <button onClick={toggleHideDone} className={`buttons__additionalButton ${tasks.some(({ done }) => done) ? "" : "disabled"}`}
                 >
-                    {tasks.some(({ done }) => done) ? `${hideDoneTasks ? "Pokaż" : "Ukryj"}` : "Ukryj"} ukończone
+                    {tasks.some(({ done }) => done) ? `${hideDone ? "Pokaż" : "Ukryj"}` : "Ukryj"} ukończone
                 </button>
 
                 <button

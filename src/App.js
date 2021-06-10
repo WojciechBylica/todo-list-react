@@ -14,7 +14,11 @@ const tasks = [
 
 function App() {
   const [hideDone, sethideDone] = useState(false)
-   
+
+
+  const toggleHideDone = () => {
+    sethideDone(hideDone => !hideDone);
+  };
   return (
     <Container>
       <Header
@@ -30,7 +34,10 @@ function App() {
           <Tasks tasks={tasks} hideDone={hideDone} />
         }
         extraDivContent={
-          <Buttons tasks={tasks} hideDone={hideDone} />
+          <Buttons
+            tasks={tasks}
+            hideDone={hideDone}
+            toggleHideDone={toggleHideDone} />
         }
       />
     </Container>
