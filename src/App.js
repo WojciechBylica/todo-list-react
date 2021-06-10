@@ -6,9 +6,6 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 
-
-
-
 function App() {
   const [hideDone, sethideDone] = useState(false)
   const [tasks, setTasks] = useState([
@@ -47,9 +44,10 @@ function App() {
       {
         content,
         done: false,
-        id: tasks.length  ? tasks[tasks.length - 1].id +1 : 1,
+        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
       }])
   };
+
   return (
     <Container>
       <Header
@@ -57,7 +55,7 @@ function App() {
       />
       <Section
         title="Dodaj nowe zadanie"
-        body={<Form  addNewTask={addNewTask}/>}
+        body={<Form addNewTask={addNewTask} />}
       />
       <Section
         title="Lista zadań"
