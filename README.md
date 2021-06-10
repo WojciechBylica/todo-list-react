@@ -16,6 +16,14 @@ Simple List Of Things To Do is HTML page created as a homework during Frotend De
 - hide "done" list items
 - check all tasks as done by one click
 
+The form used in app:
+- escapes from writing html elements as tasks
+- blocks adding empty tasks 
+#### Preview of funcionality:
+![Preview of funcionality](/public/images/taskListPreview.gif)
+
+#### Preview of responsivity:
+![Preview of responsivity](/public/images/bigAndSmallScreenPreview.gif)
 ### Technology used to build the page:
 - html
 - css with BEM 
@@ -24,6 +32,7 @@ Simple List Of Things To Do is HTML page created as a homework during Frotend De
 - media querrys
 - immutability
 - React
+- Babel
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
