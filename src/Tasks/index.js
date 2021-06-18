@@ -25,11 +25,11 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => {
                         onClick={() => removeTask(task.id)}
                     >
                         &#128465;
-                </button>
+                    </button>
                 </li>
             ))}
         </ul>
-    )
+    );
 };
 
 export default Tasks;

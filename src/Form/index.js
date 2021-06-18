@@ -11,7 +11,7 @@ const Form = ({ addNewTask }) => {
     if (trimmedNewTaskContent) {
       addNewTask(trimmedNewTaskContent);
       setNewTaskContent("");
-    }
+    };
 
   };
 
@@ -25,7 +25,7 @@ const Form = ({ addNewTask }) => {
       />
       <button className="form__button">Dodaj zadanie</button>
     </form>
-  )
-}
+  );
+};
 
 export default Form;
