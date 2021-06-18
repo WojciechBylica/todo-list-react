@@ -6,7 +6,9 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
     <div className="buttons">
         {tasks.length > 0 && (
             <>
-                <button onClick={toggleHideDone} className={`buttons__additionalButton ${tasks.some(({ done }) => done) ? "" : "disabled"}`}
+                <button onClick={toggleHideDone}
+                    className="buttons__additionalButton"
+                    disabled={tasks.some(({ done }) => done) ? "" : "{true}"}
                 >
                     {tasks.some(({ done }) => done) ? `${hideDone ? "Pokaż" : "Ukryj"}` : "Ukryj"} ukończone
                 </button>
@@ -21,6 +23,6 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
             </>
         )}
     </div>
-)
+);
 
 export default Buttons;
