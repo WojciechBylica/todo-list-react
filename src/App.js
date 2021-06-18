@@ -64,7 +64,7 @@ function App() {
             toggleTaskDone={toggleTaskDone}
           />
         }
-        extraDivContent={
+        additionalButtons={
           <Buttons
             tasks={tasks}
             hideDone={hideDone}
