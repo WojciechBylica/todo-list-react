@@ -16,9 +16,11 @@ Simple List Of Things To Do is HTML page created as a homework during Frotend De
 - hide "done" list items
 - check all tasks as done by one click
 
-The form used in app:
+The app:
 - escapes from writing html elements as tasks
 - blocks adding empty tasks 
+- saves the tasks in localStorage
+-loads the tasks from the localStorage
 #### Preview of funcionality:
 ![Preview of funcionality](/public/images/taskListPreview.gif)
 
