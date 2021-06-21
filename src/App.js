@@ -6,9 +6,14 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 
+const getInitialTasksFromLocalStorage = () => (
+  JSON.parse(localStorage.getItem("savedTasks") || [])
+);
+
 function App() {
+
   const [hideDone, sethideDone] = useState(false);
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(getInitialTasksFromLocalStorage);
 
   const toggleHideDone = () => {
     sethideDone(hideDone => !hideDone);
@@ -46,11 +51,6 @@ function App() {
   };
 
   useEffect(() => {
-    const savedTasks = JSON.parse(localStorage.getItem("savedTasks"))
-    if (savedTasks) { setTasks(savedTasks) }
-  }, []);
-
-  useEffect(() => {
     localStorage.setItem("savedTasks", JSON.stringify(tasks));
   }, [tasks]);
 
@@ -73,7 +73,7 @@ function App() {
             toggleTaskDone={toggleTaskDone}
           />
         }
-        additionalButtons={
+        extraContent={
           <Buttons
             tasks={tasks}
             hideDone={hideDone}
