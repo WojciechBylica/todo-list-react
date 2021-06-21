@@ -20,7 +20,7 @@ The app:
 - escapes from writing html elements as tasks
 - blocks adding empty tasks 
 - saves the tasks in localStorage
--loads the tasks from the localStorage
+- loads the tasks from the localStorage
 #### Preview of funcionality:
 ![Preview of funcionality](/public/images/taskListPreview.gif)
 
