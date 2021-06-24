@@ -21,6 +21,7 @@ The app:
 - blocks adding empty tasks 
 - saves the tasks in localStorage
 - loads the tasks from the localStorage
+- has set focus on form input at start off app and after adding new task
 #### Preview of funcionality:
 ![Preview of funcionality](/public/images/taskListPreview.gif)
 
@@ -28,13 +29,13 @@ The app:
 ![Preview of responsivity](/public/images/bigAndSmallScreenPreview.gif)
 ### Technology used to build the page:
 - html
-- css with BEM 
 - Flex
 - EC6+
 - media querrys
 - immutability
 - React
 - Babel
+- styled components
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
