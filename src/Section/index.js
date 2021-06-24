@@ -1,14 +1,14 @@
 import React from "react";
-import "./style.css";
+import { PageSection, PageSectionDiv, PageSectionH2 } from "./styled";
 
 const Section = ({ title, body, extraContent }) => (
-    <section className="section">
-        <div className="section__div">
-            <h2 className="section__header">{title}</h2>
+    <PageSection>
+        <PageSectionDiv>
+            <PageSectionH2>{title}</PageSectionH2>
             {extraContent}
-        </div>
+        </PageSectionDiv>
         {body}
-    </section>
+    </PageSection>
 );
 
 export default Section;
