@@ -8,7 +8,7 @@ https://github.com/WojciechBylica/todo-list-react
 
 ### Description.
 
-Simple List Of Things To Do is HTML page created as a homework during Frotend Developing Course in U-Code school. It allows You to:
+Simple List Of Things To Do is HTML page created as a homework during Frotend Developing Course in U-Code school. It allows you to:
 - create a list
 - add new list items
 - check list items as "done"
@@ -21,7 +21,7 @@ The app:
 - blocks adding empty tasks 
 - saves the tasks in localStorage
 - loads the tasks from the localStorage
-- has set focus on form input at start off app and after adding new task
+- has set focus on form after starting the app and after adding new task
 #### Preview of funcionality:
 ![Preview of funcionality](/public/images/taskListPreview.gif)
 
