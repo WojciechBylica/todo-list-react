@@ -1,26 +1,22 @@
-import React, { useState, useRef, useEffect } from "react";
 import { FormElement, Input, FormButton } from "./styled";
+import { useForm } from "./useForm";
 
 const Form = ({ addNewTask }) => {
-  const [newTaskContent, setNewTaskContent] = useState("")
 
-  const inputRef = useRef();
-  const focusInput = () => {
-    inputRef.current.focus()
-  };
+  const {
+    newTaskContent,
+    setNewTaskContent,
+    inputRef,
+    focusInput,
+  } = useForm()
 
-  useEffect(() => {
-    inputRef.current.focus()
-  })
-
-  const onFormSubmit = (event) => {
+  const onFormSubmit = (event,) => {
     event.preventDefault();
     const trimmedNewTaskContent = newTaskContent.trim();
     if (trimmedNewTaskContent) {
       addNewTask(trimmedNewTaskContent);
       setNewTaskContent("");
     };
-
   };
 
   return (
