@@ -10,7 +10,7 @@ export const useForm = () => {
 
     useEffect(() => {
         inputRef.current.focus()
-    },[inputRef]);
+    }, [inputRef]);
 
     return {
         newTaskContent,
