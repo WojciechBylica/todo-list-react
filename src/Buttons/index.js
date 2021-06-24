@@ -1,28 +1,26 @@
 import React from "react";
-import "./style.css";
+import { ButtonsDiv, ButtonAdditional } from "./syled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
 
-    <div className="buttons">
+    <ButtonsDiv>
         {tasks.length > 0 && (
             <>
-                <button onClick={toggleHideDone}
-                    className="buttons__additionalButton"
+                <ButtonAdditional onClick={toggleHideDone}
                     disabled={tasks.every(({ done }) => !done)}
                 >
                     {tasks.some(({ done }) => done) ? `${hideDone ? "Pokaż" : "Ukryj"}` : "Ukryj"} ukończone
-                </button>
+                </ButtonAdditional>
 
-                <button
+                <ButtonAdditional
                     onClick={setAllDone}
-                    className="buttons__additionalButton"
                     disabled={tasks.every(({ done }) => done)}
                 >
                     Ukończ wszystkie
-                </button>
+                </ButtonAdditional>
             </>
         )}
-    </div>
+    </ButtonsDiv>
 );
 
 export default Buttons;
