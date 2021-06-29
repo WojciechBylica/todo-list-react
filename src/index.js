@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Normalize } from `styled-components`;
 
 ReactDOM.render(
   <React.StrictMode>
+    <Normalize />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
