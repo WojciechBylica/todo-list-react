@@ -22,6 +22,7 @@ const Form = ({ addNewTask }) => {
   return (
     <FormElement onSubmit={onFormSubmit}>
       <Input
+        autoFocus
         ref={inputRef}
         value={newTaskContent}
         placeholder="Co jest do zrobienia?"

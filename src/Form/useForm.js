@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, } from "react";
 
 export const useForm = () => {
     const [newTaskContent, setNewTaskContent] = useState("")
@@ -7,10 +7,6 @@ export const useForm = () => {
     const focusInput = () => {
         inputRef.current.focus()
     };
-
-    useEffect(() => {
-        inputRef.current.focus()
-    }, [inputRef]);
 
     return {
         newTaskContent,
