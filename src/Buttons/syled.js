@@ -12,23 +12,23 @@ export const ButtonsDiv = styled.div`
 
 export const ButtonAdditional = styled.button`
     border: none;
-    background: white;
-    color: teal;
+    background: ${({ theme }) => theme.color.white};
+    color: ${({ theme }) => theme.color.teal};
     grid-gap: 20px;
     transition: 1s;
     margin: 10px 0px;
     cursor: pointer;
 
-    &:active {
-    color: rgb(7, 197, 197);
+    &:hover {
+    filter: brightness(110%);
     }
 
-    &:hover {
-    color: rgb(8, 182, 182);
+    &:active {
+        filter: brightness(120%);
     }
 
     &:disabled {
-    color: grey;
+        color: ${({ theme }) => theme.color.grey};
     cursor: unset;
     }
 `;

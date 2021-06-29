@@ -16,6 +16,6 @@ export const PageSectionDiv = styled.div`
 export const PageSectionH2 = styled.h2`
     margin: 0 0 1px;
     padding: 15px;
-    background: white;
+    background: ${({ theme }) => theme.color.white};
     font-size: 17px;
 `;
