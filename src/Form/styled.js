@@ -16,7 +16,7 @@ export const Input = styled.input`
 `;
 
 export const FormButton = styled.button`
-    background: teal;
+    background: ${({ theme }) => theme.color.teal};
     color: white;
     padding: 10px;
     margin: 0px 0px 0px 15px;
@@ -24,17 +24,19 @@ export const FormButton = styled.button`
     cursor: pointer;
     transition: 1s;
 
-    @media(max-width: 500px) {
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         flex-basis: 100%;
         margin: 7px 0px;
     }
 
-    &:active {
-    background: rgb(3, 184, 184);
-    }
-
     &:hover {
-    background: rgb(2, 156, 156);
+    filter: brightness(110%);
     transform: scale(1.1);
     }   
+
+    &:active {
+        filter: brightness(120%);
+    }
+
+    
 `;

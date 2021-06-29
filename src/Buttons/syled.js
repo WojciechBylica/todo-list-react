@@ -4,7 +4,7 @@ export const ButtonsDiv = styled.div`
     display: flex;
     align-items: center;
 
-    @media (max-width:500px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         flex-direction: column;
         flex-basis: 100%;
     }

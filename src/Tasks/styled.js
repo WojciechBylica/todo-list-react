@@ -40,26 +40,26 @@ export const Button = styled.button`
     transition: 0.3s;
 
     ${({ toggleDone }) => toggleDone && css`
-        background : hsl(120, 61%, 34%);
+        background : ${({ theme }) => theme.color.green};
 
         &:hover {
-        background: hsl(120, 61%, 40%);
+            filter: brightness(110%);
     }       
 
         &:active {
-            background: hsl(120, 61%, 45%);
+            filter: brightness(120%);
         }
     `}
 
     ${({ remove }) => remove && css`
-    background: red;
-
+    background: ${({ theme }) => theme.color.red};
+   
     &:hover {
-        background: rgb(248, 90, 90);
+        filter: brightness(110%);
     }
 
     &:active {
-        background: rgb(236, 128, 128);
+        filter: brightness(120%);
     }
     `} 
 `;
