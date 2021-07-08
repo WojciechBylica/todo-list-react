@@ -2,7 +2,6 @@ import { FormElement, Input, FormButton } from "./styled";
 import { useForm } from "./useForm";
 
 const Form = ({ addNewTask }) => {
-
   const {
     newTaskContent,
     setNewTaskContent,
@@ -13,6 +12,7 @@ const Form = ({ addNewTask }) => {
   const onFormSubmit = (event,) => {
     event.preventDefault();
     const trimmedNewTaskContent = newTaskContent.trim();
+
     if (trimmedNewTaskContent) {
       addNewTask(trimmedNewTaskContent);
       setNewTaskContent("");
@@ -28,6 +28,7 @@ const Form = ({ addNewTask }) => {
         placeholder="Co jest do zrobienia?"
         onChange={({ target }) => setNewTaskContent(target.value)}
       />
+
       <FormButton onClick={focusInput}>Dodaj zadanie</FormButton>
     </FormElement>
   );

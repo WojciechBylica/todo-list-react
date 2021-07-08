@@ -8,8 +8,8 @@ import Container from "./Container";
 import { useTasks } from "./useTasks"
 
 function App() {
-
   const [hideDone, sethideDone] = useState(false);
+
   const toggleHideDone = () => {
     sethideDone(hideDone => !hideDone);
   };
@@ -31,10 +31,12 @@ function App() {
       <Header
         title="Lista zadań"
       />
+
       <Section
         title="Dodaj nowe zadanie"
         body={<Form addNewTask={addNewTask} />}
       />
+      
       <Section
         title="Lista zadań"
         body={
