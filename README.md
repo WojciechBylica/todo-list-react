@@ -18,18 +18,16 @@ Simple List Of Things To Do is HTML page created as a homework during Frotend De
 The app:
 - escapes from writing html elements as tasks
 - blocks adding empty tasks 
-- saves the tasks in localStorage
-- loads the tasks from the localStorage
 - has set focus on form after starting the app and after adding new task
-### Technology used to build the page:
+### Technologies and concepts used to build the app:
 - html
 - Flex
 - EC6+
 - media querrys
-- immutability
 - React
 - Babel
 - styled components
+- Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
