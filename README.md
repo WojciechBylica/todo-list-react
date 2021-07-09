@@ -1,6 +1,6 @@
 # Task list.
 - autor: Wojciech Bylica
-- created: 25.06.2021
+- updated: 09.07.2021
 ## Demo.
 https://wojciechbylica.github.io/todo-list-react/
 ## Preview
