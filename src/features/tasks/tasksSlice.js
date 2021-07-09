@@ -3,13 +3,7 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 const tasksSlice = createSlice({
     name: 'tasks',
     initialState: {
-        tasks: [
-            {
-                content: "test buttona",
-                done: true,
-                id: nanoid(),
-            },
-        ],
+        tasks: [],
         hideDone: false,
     },
     reducers: {
