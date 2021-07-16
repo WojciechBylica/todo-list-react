@@ -4,7 +4,6 @@ import {
     selectHideDone,
     selectIsEveryTaskDone,
     selectAreTasksEmpty,
-    // selectTasks,
     toggleHideDone,
     setAllDone,
     fetchExampleTasks
@@ -16,14 +15,13 @@ const Buttons = () => {
     const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
     const hideDone = useSelector(selectHideDone);
     const isAnyTaskDone = useSelector(selectIsAnyTaskDone);
-    // const { tasks, hideDone } = useSelector(selectTasks);
     const dispatch = useDispatch()
     return (
         <ButtonsDiv>
             <ButtonAdditional onClick={() => dispatch(fetchExampleTasks())}>
                 Pobierz przykładowe zadania
             </ButtonAdditional>
-            {!areTasksEmpty && (
+            {areTasksEmpty && (
                 <>
                     <ButtonAdditional onClick={() => dispatch(toggleHideDone())}
                         disabled={!isEveryTaskDone}
