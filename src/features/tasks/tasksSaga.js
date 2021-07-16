@@ -20,7 +20,7 @@ function* saveTasksInLocalStorageHandler() {
 
 }
 
-export function* watchFetchExampleTasks() {
+export function* tasksSaga() {
     yield throttle(2_000, fetchExampleTasks.type, fetchExampleTasksHandler);
     yield takeEvery("*", saveTasksInLocalStorageHandler);
 }
