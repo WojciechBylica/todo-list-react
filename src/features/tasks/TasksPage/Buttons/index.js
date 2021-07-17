@@ -7,7 +7,7 @@ import {
     toggleHideDone,
     setAllDone,
     fetchExampleTasks
-} from "../tasksSlice";
+} from "../../tasksSlice";
 import { ButtonsDiv, ButtonAdditional } from "./styled";
 
 const Buttons = () => {

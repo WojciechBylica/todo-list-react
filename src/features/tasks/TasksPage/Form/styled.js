@@ -8,13 +8,6 @@ export const FormElement = styled.form`
     flex-wrap: wrap;
 `;
 
-export const Input = styled.input`
-    flex-grow: 1;
-    padding: 10px;
-    border: 1px solid #80808040;
-    border-radius: 1px;
-`;
-
 export const FormButton = styled.button`
     background: ${({ theme }) => theme.color.teal};
     color: ${({ theme }) => theme.color.white};

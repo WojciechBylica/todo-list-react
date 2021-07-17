@@ -8,7 +8,7 @@ export const PageSectionDiv = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: white;
+    background: ${({ theme }) => theme.color.white};
     margin: 0px 0px 1px 0px;
     padding-right: 15px;
 `;

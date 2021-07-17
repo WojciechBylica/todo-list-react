@@ -1,8 +1,9 @@
-import { FormElement, Input, FormButton } from "./styled";
+import { FormElement, FormButton } from "./styled";
+import {Input} from "../../Input";
 import { useForm } from "./useForm";
 import { useDispatch } from "react-redux";
 import { nanoid } from "@reduxjs/toolkit";
-import { addTask } from "../tasksSlice";
+import { addTask } from "../../tasksSlice";
 
 const Form = () => {
   const {
