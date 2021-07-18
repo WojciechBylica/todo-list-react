@@ -23,9 +23,19 @@ export const Content = styled.span`
     padding: 0px 10px;
     flex-grow: 1;
     color: #565555;
+
     ${({ done }) => done && css`
         text-decoration: line-through;
     `}
+`;
+
+export const StyledLink = styled.a`
+    text-decoration: none;
+    color: ${({ theme }) => theme.color.teal};
+
+    &:hover{
+        filter: brightness(120%);
+    }
 `;
 
 export const Button = styled.button`
