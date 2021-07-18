@@ -3,21 +3,21 @@ import {
     selectIsAnyTaskDone,
     selectHideDone,
     selectIsEveryTaskDone,
-    selectAreTasksEmpty,
+    selectAreTasksNotEmpty,
     toggleHideDone,
     setAllDone,
 } from "../../tasksSlice";
 import { ButtonsDiv, ButtonAdditional } from "../styled";
 
 const Buttons = () => {
-    const areTasksEmpty = useSelector(selectAreTasksEmpty);
+    const areTasksNotEmpty = useSelector(selectAreTasksNotEmpty);
     const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
     const hideDone = useSelector(selectHideDone);
     const isAnyTaskDone = useSelector(selectIsAnyTaskDone);
     const dispatch = useDispatch();
     return (
         <ButtonsDiv>
-            {areTasksEmpty && (
+            {areTasksNotEmpty && (
                 <>
                     <ButtonAdditional onClick={() => dispatch(toggleHideDone())}
                         disabled={!isEveryTaskDone}
