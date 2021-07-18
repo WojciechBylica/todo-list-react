@@ -29,11 +29,11 @@ const tasksSlice = createSlice({
             }
         },
         fetchExampleTasks: (state) => {
-            state.status = "loading"
+            state.status = "loading";
         },
         fetchExampleTasksSuccess: (state, { payload: tasks }) => {
             state.tasks = tasks;
-            state.status = "success"
+            state.status = "success";
         },
     },
 });
