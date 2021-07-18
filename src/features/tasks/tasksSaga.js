@@ -1,7 +1,7 @@
 import { throttle, call, put, delay, takeEvery, select } from "redux-saga/effects";
 import { getExampleTasks } from "./getExampleTasks";
 import { saveTasksInLocalStorage } from "./taskLocalStorage";
-import { fetchExampleTasks, selectTasks, setTasks, fetchExampleTasksSuccess } from "./tasksSlice";
+import { fetchExampleTasks, selectTasks, fetchExampleTasksSuccess } from "./tasksSlice";
 
 function* fetchExampleTasksHandler() {
     console.log("Zaczynam pracę")
