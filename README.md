@@ -22,8 +22,8 @@ Simple List Of Things To Do is HTML page created as a homework during Frotend De
 The app:
 - escapes from writing html elements as tasks
 - blocks adding empty tasks 
-- has set focus on form after starting the app and after adding new task
-- show info if there is an error in search URL
+- sets focus on form input after starting the app and after adding new task
+- shows info if there is an error in search URL
 - saves and loads tasks in localStorage
 ### Technologies and concepts used to build the app:
 - html
