@@ -1,5 +1,5 @@
 import { FormElement, FormButton } from "./styled";
-import {Input} from "../../Input";
+import { Input } from "../../Input";
 import { useForm } from "./useForm";
 import { useDispatch } from "react-redux";
 import { nanoid } from "@reduxjs/toolkit";
