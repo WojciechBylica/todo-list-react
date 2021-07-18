@@ -6,21 +6,17 @@ import {
     selectAreTasksEmpty,
     toggleHideDone,
     setAllDone,
-    fetchExampleTasks
 } from "../../tasksSlice";
-import { ButtonsDiv, ButtonAdditional } from "./styled";
+import { ButtonsDiv, ButtonAdditional } from "../styled";
 
 const Buttons = () => {
     const areTasksEmpty = useSelector(selectAreTasksEmpty);
     const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
     const hideDone = useSelector(selectHideDone);
     const isAnyTaskDone = useSelector(selectIsAnyTaskDone);
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
     return (
         <ButtonsDiv>
-            <ButtonAdditional onClick={() => dispatch(fetchExampleTasks())}>
-                Pobierz przykładowe zadania
-            </ButtonAdditional>
             {areTasksEmpty && (
                 <>
                     <ButtonAdditional onClick={() => dispatch(toggleHideDone())}
