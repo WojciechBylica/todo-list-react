@@ -8,7 +8,3 @@ export const getTasksFromLocalStorage = () => {
     ? JSON.parse(localStorage.getItem(localStorageKey))
     : [];
 }
-
-
-
-    // JSON.parse(localStorage.getItem(localStorageKey)) || [];
