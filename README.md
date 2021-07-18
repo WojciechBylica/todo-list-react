@@ -1,10 +1,10 @@
 # Task list.
 - autor: Wojciech Bylica
-- updated: 09.07.2021
+- updated: 18.07.2021
 ## Demo.
 https://wojciechbylica.github.io/todo-list-react/
 ## Preview
-![Preview](/public/images/taskListPreview.gif)
+![Preview](/public/images/taskList.gif)
 ### Description.
 
 Simple List Of Things To Do is HTML page created as a homework during Frotend Developing Course in U-Code school. It allows you to:
@@ -14,11 +14,17 @@ Simple List Of Things To Do is HTML page created as a homework during Frotend De
 - remove list items
 - hide "done" list items
 - check all tasks as done by one click
+- search task
+- load sample tasks
+- check details of the task
+- read info about autor
 
 The app:
 - escapes from writing html elements as tasks
 - blocks adding empty tasks 
 - has set focus on form after starting the app and after adding new task
+- show info if there is an error in search URL
+- saves and loads tasks in localStorage
 ### Technologies and concepts used to build the app:
 - html
 - Flex
@@ -28,6 +34,8 @@ The app:
 - Babel
 - styled components
 - Redux
+- Saga
+- Router
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
