@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
     display:flex;
     justify-content: center;
 
-    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         flex-direction: column;
         text-align: left;
     }

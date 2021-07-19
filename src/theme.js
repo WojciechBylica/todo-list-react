@@ -7,6 +7,7 @@ export const theme = {
         grey: "grey",
     },
     breakpoint: {
+        mobile: 500,
         mobileMax:767,
     },
 };
