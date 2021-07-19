@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/todo-list-react/static/js/main.9fe4235a.chunk.js",
-    "main.js.map": "/todo-list-react/static/js/main.9fe4235a.chunk.js.map",
+    "main.js": "/todo-list-react/static/js/main.7957ab35.chunk.js",
+    "main.js.map": "/todo-list-react/static/js/main.7957ab35.chunk.js.map",
     "runtime-main.js": "/todo-list-react/static/js/runtime-main.ede7ab92.js",
     "runtime-main.js.map": "/todo-list-react/static/js/runtime-main.ede7ab92.js.map",
     "static/js/2.2045fbc3.chunk.js": "/todo-list-react/static/js/2.2045fbc3.chunk.js",
@@ -9,11 +9,12 @@
     "static/js/3.fcc35d9a.chunk.js": "/todo-list-react/static/js/3.fcc35d9a.chunk.js",
     "static/js/3.fcc35d9a.chunk.js.map": "/todo-list-react/static/js/3.fcc35d9a.chunk.js.map",
     "index.html": "/todo-list-react/index.html",
-    "static/js/2.2045fbc3.chunk.js.LICENSE.txt": "/todo-list-react/static/js/2.2045fbc3.chunk.js.LICENSE.txt"
+    "static/js/2.2045fbc3.chunk.js.LICENSE.txt": "/todo-list-react/static/js/2.2045fbc3.chunk.js.LICENSE.txt",
+    "static/media/WBTaiko.38ae8e0f.png": "/todo-list-react/static/media/WBTaiko.38ae8e0f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ede7ab92.js",
     "static/js/2.2045fbc3.chunk.js",
-    "static/js/main.9fe4235a.chunk.js"
+    "static/js/main.7957ab35.chunk.js"
   ]
 }
