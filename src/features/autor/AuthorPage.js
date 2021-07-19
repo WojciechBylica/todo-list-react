@@ -1,8 +1,9 @@
 import Container from "../../common/Container";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
-import { Image, Wrapper } from "./styled"
-import WBTaiko from "./WBTaiko.png"
+import { Image, Wrapper } from "./styled";
+import WBTaiko from "./WBTaiko.png";
+
 export default () => (
     <Container>
         <Header title="O autorze" />

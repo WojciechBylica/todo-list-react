@@ -8,7 +8,8 @@ import { Wrapper } from "./styled"
 
 function TaskPage() {
     const { id } = useParams();
-    const task = useSelector(state => getTaskById(state, id))
+    const task = useSelector(state => getTaskById(state, id));
+    
     return (
         <Container>
             <Header

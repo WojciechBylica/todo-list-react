@@ -1,4 +1,3 @@
-import React from "react";
 import { PageSection, PageSectionDiv, PageSectionH2 } from "./styled";
 
 const Section = ({ title, body, extraContent }) => (

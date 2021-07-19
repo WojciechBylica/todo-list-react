@@ -5,7 +5,7 @@ import { useQueryParameter, useReplaceQueryParameter } from "../queryParameters"
 
 export default () => {
     const query = useQueryParameter(searchQueryParamName);
-    const replaceQueryParameter = useReplaceQueryParameter()
+    const replaceQueryParameter = useReplaceQueryParameter();
 
     const onInputChange = ({ target }) => {
         replaceQueryParameter({
@@ -22,5 +22,5 @@ export default () => {
                 onChange={onInputChange}
             />
         </Wrapper>
-    )
-}
+    );
+};
