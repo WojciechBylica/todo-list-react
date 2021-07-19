@@ -15,6 +15,7 @@ const Buttons = () => {
     const hideDone = useSelector(selectHideDone);
     const isAnyTaskDone = useSelector(selectIsAnyTaskDone);
     const dispatch = useDispatch();
+
     return (
         <ButtonsDiv>
             {areTasksNotEmpty && (
@@ -34,7 +35,7 @@ const Buttons = () => {
                 </>
             )}
         </ButtonsDiv>
-    )
+    );
 };
 
 export default Buttons;
