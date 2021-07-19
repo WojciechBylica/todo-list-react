@@ -4,8 +4,7 @@ import { fetchExampleTasks, selectTasksState } from "../../tasksSlice";
 
 const SampleTasksButton = () => {
     const dispatch = useDispatch();
-    const tasks = useSelector(selectTasksState)
-    console.log(tasks.status)
+    const tasks = useSelector(selectTasksState);
     return (
         <ButtonsDiv>
             <ButtonAdditional
@@ -18,8 +17,7 @@ const SampleTasksButton = () => {
             </ButtonAdditional>
 
         </ButtonsDiv>
-    )
-
+    );
 };
 
 export default SampleTasksButton;

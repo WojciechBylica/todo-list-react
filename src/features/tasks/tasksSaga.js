@@ -4,7 +4,6 @@ import { saveTasksInLocalStorage } from "./taskLocalStorage";
 import { fetchExampleTasks, selectTasks, fetchExampleTasksSuccess } from "./tasksSlice";
 
 function* fetchExampleTasksHandler() {
-    console.log("Zaczynam pracę")
     try {
         yield delay(1000);
         const exampleTasks = yield call(getExampleTasks);
