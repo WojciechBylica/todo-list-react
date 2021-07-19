@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
     background: ${({ theme }) => theme.color.white};
     text-align: justify;
     display:flex;
+    justify-content: center;
 
     @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         flex-direction: column;
