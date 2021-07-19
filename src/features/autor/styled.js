@@ -5,7 +5,11 @@ export const Wrapper = styled.div`
     background: ${({ theme }) => theme.color.white};
     text-align: justify;
     display:flex;
-    justify-content: center;
+    align-items: center;
+
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        text-align: left;
+    }
 
     @media(max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         flex-direction: column;
@@ -18,4 +22,8 @@ export const Image = styled.img`
     width: 250px;
     border-radius: 50px;
     margin: 0 10px;
+`;
+
+export const StyledParagraph = styled.p`
+    align-self: flex-start;
 `;
