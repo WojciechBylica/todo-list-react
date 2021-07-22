@@ -3,21 +3,13 @@ import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import TasksPage from "./features/tasks/TasksPage/index";
 import TaskPage from "./features/tasks/TaskPage/index";
 import AuthorPage from "./features/autor/AuthorPage";
-import { StyledItem, StyledList, StyledNav, StyledNavLink } from "./styled";
 import { toAuthor, toTask, toTasks } from "./route";
+import Navigation from "./Navigation";
 
 export default () => (
     <HashRouter>
-        <StyledNav>
-            <StyledList>
-                <StyledItem>
-                    <StyledNavLink to={toTasks()}>Zadania</StyledNavLink>
-                </StyledItem>
-                <StyledItem>
-                    <StyledNavLink to={toAuthor()}>O autorze</StyledNavLink>
-                </StyledItem>
-            </StyledList>
-        </StyledNav>
+        <Navigation />
+
         <Switch>
             <Route path={toTask()}>
                 <TaskPage />
