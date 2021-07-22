@@ -7,7 +7,7 @@ import {
     toggleHideDone,
     setAllDone,
 } from "../../tasksSlice";
-import { ButtonsDiv, ButtonAdditional } from "../styled";
+import { ButtonsDiv, ButtonAdditional } from "../Button";
 
 const Buttons = () => {
     const areTasksNotEmpty = useSelector(selectAreTasksNotEmpty);
