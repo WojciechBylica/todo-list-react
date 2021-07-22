@@ -4,7 +4,7 @@
 ## Demo.
 https://wojciechbylica.github.io/todo-list-react/
 ## Preview
-![Preview](/public/images/taskList.gif)
+![Preview](taskList.gif)
 ### Description.
 
 Simple List Of Things To Do is HTML page created as a homework during Frotend Developing Course in U-Code school. It allows you to:
@@ -34,8 +34,9 @@ The app:
 - Babel
 - styled components
 - Redux
-- Saga
-- Router
+- Redux-Saga
+- Redux-Router
+- Redux-Toolkit
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
