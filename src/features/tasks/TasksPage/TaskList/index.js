@@ -3,6 +3,7 @@ import { toggleTaskDone, removeTask, selectHideDone, selectTasksByQuery } from "
 import { List, Item, Content, Button, StyledLink } from "./styled";
 import { Link, useLocation } from "react-router-dom";
 import searchQueryParamName from "../Search/searchQueryParamName";
+import { toTask } from "../../../../route";
 
 const TaskList = () => {
     const location = useLocation();
@@ -27,7 +28,7 @@ const TaskList = () => {
                     </Button>
 
                     <Content done={task.done}>
-                        <StyledLink as={Link} to={`/zadania/${task.id}`}>{task.content}</StyledLink>
+                        <StyledLink as={Link} to={toTask({ id: task.id })}>{task.content}</StyledLink>
                     </Content>
 
                     <Button
