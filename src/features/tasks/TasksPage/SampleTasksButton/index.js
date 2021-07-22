@@ -1,17 +1,17 @@
 import { ButtonAdditional, ButtonsDiv } from "../styled";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchExampleTasks, selectTasksState } from "../../tasksSlice";
+import { fetchExampleTasks, selectLoading, selectTasksState } from "../../tasksSlice";
 
 const SampleTasksButton = () => {
     const dispatch = useDispatch();
-    const tasks = useSelector(selectTasksState);
+    const loading = useSelector(selectLoading);
     return (
         <ButtonsDiv>
             <ButtonAdditional
-                disabled={tasks.status === "loading"}
+                disabled={loading}
                 onClick={() => dispatch(fetchExampleTasks())}>
-                {tasks.status === "loading"
-                    ? "ładuję..."
+                {loading
+                    ? "ładowanie..."
                     : "Pobierz przykładowe zadania"
                 }
             </ButtonAdditional>
