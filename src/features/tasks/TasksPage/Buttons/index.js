@@ -21,9 +21,9 @@ const Buttons = () => {
             {areTasksNotEmpty && (
                 <>
                     <ButtonAdditional onClick={() => dispatch(toggleHideDone())}
-                        disabled={!isEveryTaskDone}
+                        disabled={!isAnyTaskDone}
                     >
-                        {isAnyTaskDone ? `${hideDone ? "Pokaż" : "Ukryj"}` : "Ukryj"} ukończone
+                        {hideDone ? "Pokaż" : "Ukryj"} ukończone
                     </ButtonAdditional>
 
                     <ButtonAdditional
