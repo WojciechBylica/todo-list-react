@@ -23,13 +23,11 @@ export const FormButton = styled.button`
     }
 
     &:hover {
-    filter: brightness(110%);
-    transform: scale(1.1);
+        filter: brightness(110%);
+        transform: scale(1.1);
     }   
 
     &:active {
         filter: brightness(120%);
     }
-
-    
 `;

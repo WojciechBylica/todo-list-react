@@ -11,7 +11,7 @@ const Form = () => {
     setNewTaskContent,
     inputRef,
     focusInput,
-  } = useForm()
+  } = useForm();
 
   const dispatch = useDispatch();
 
