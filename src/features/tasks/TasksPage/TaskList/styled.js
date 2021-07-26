@@ -62,7 +62,7 @@ export const Button = styled.button`
     `}
 
     ${({ remove }) => remove && css`
-    background: ${({ theme }) => theme.color.red};
+        background: ${({ theme }) => theme.color.red};
    
     &:hover {
         filter: brightness(110%);
