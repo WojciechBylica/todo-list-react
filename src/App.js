@@ -3,7 +3,7 @@ import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import TasksPage from "./features/tasks/TasksPage/index";
 import TaskPage from "./features/tasks/TaskPage/index";
 import AuthorPage from "./features/author/AuthorPage";
-import { toAuthor, toTask, toTasks } from "./route";
+import { toAuthor, toTask, toTasks } from "./routes";
 import Navigation from "./Navigation";
 
 export default () => (

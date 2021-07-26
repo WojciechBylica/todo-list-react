@@ -1,4 +1,4 @@
-import { toAuthor, toTasks } from "../route"
+import { toAuthor, toTasks } from "../routes"
 import { StyledItem, StyledList, StyledNav, StyledNavLink } from "./styled";
 
 
