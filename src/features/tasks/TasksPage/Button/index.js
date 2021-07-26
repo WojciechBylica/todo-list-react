@@ -20,7 +20,7 @@ export const ButtonAdditional = styled.button`
     cursor: pointer;
 
     &:hover {
-    filter: brightness(110%);
+        filter: brightness(110%);
     }
 
     &:active {
@@ -29,6 +29,6 @@ export const ButtonAdditional = styled.button`
 
     &:disabled {
         color: ${({ theme }) => theme.color.grey};
-    cursor: unset;
+        cursor: unset;
     }
 `;
