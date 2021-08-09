@@ -15,7 +15,7 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
 `;
 
 export const StyledNav = styled.nav`
-    background: ${({ theme }) => theme.color.teal};
+    background: ${({ theme }) => theme.color.teal}
 `;
 
 export const StyledList = styled.ul`
