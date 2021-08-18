@@ -36,7 +36,7 @@ const tasksSlice = createSlice({
             state.status = "success";
         },
         fetchExampleTasksError: (state) => {
-            state.status = "success";
+            state.status = "error";
         },
     },
 });
