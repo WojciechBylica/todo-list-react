@@ -6,6 +6,10 @@
   <link rel="icon" href="%PUBLIC_URL%/images/checkList.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
+  <meta property="og:url" content="%PUBLIC_URL%" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lista zadań w React.js" />
+  <meta property="og:description" content="Task list app written in react.js" />
   <meta property=og:image content=%PUBLIC_URL%/images/checkList.png />
   <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -27,6 +31,9 @@
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v12.0"
+    nonce="5P5AOsj4"></script>
   <div id="root"></div>
   <!--
       This HTML file is a template.
