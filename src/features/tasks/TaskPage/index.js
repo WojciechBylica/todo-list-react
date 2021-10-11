@@ -15,7 +15,17 @@ function TaskPage() {
             <Header
                 title="Szczegóły zadania"
             />
-
+            <div
+                class="fb-share-button"
+                data-href="https://wojciechbylica.github.io/todo-list-react#/zadania/wKALyiV8WJIsR-KHsuzCP"
+                data-layout="box_count"
+                data-size="large"
+            >
+                <a
+                    target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwojciechbylica.github.io%2Ftodo-list-react%2F&amp;src=sdkpreparse" 
+                    class="fb-xfbml-parse-ignore">
+                    Udostępnij</a></div>
             <Section
                 title={task ? task.content : "Nie znaleziono zadania😟"}
                 body={!!task && (
