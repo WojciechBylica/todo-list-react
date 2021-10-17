@@ -1,18 +1,16 @@
-import Form from "./Form";
-import TaskList from "./TaskList";
-import Buttons from "./Buttons";
-import SampletasksButton from "./SampleTasksButton";
-import Section from "../../../common/Section";
-import Header from "../../../common/Header";
-import Container from "../../../common/Container";
-import Search from "./Search";
+import Form from './Form';
+import TaskList from './TaskList';
+import Buttons from './Buttons';
+import SampletasksButton from './SampleTasksButton';
+import Section from '../../../common/Section';
+import Header from '../../../common/Header';
+import Container from '../../../common/Container';
+import Search from './Search';
 
 function TasksPage() {
   return (
     <Container>
-      <Header
-        title="Lista zadań"
-      />
+      <Header title="Lista zadań" />
 
       <Section
         title="Dodaj nowe zadanie"
@@ -20,10 +18,7 @@ function TasksPage() {
         extraContent={<SampletasksButton />}
       />
 
-      <Section
-        title="Wyszukiwarka"
-        body={<Search />}
-      />
+      <Section title="Wyszukiwarka" body={<Search />} />
 
       <Section
         title="Lista zadań"
@@ -32,6 +27,6 @@ function TasksPage() {
       />
     </Container>
   );
-};
+}
 
 export default TasksPage;

@@ -1,13 +1,13 @@
-import { PageSection, PageSectionDiv, PageSectionH2 } from "./styled";
+import { PageSection, PageSectionDiv, PageSectionH2 } from './styled';
 
 const Section = ({ title, body, extraContent }) => (
-    <PageSection>
-        <PageSectionDiv>
-            <PageSectionH2>{title}</PageSectionH2>
-            {extraContent}
-        </PageSectionDiv>
-        {body}
-    </PageSection>
+  <PageSection>
+    <PageSectionDiv>
+      <PageSectionH2>{title}</PageSectionH2>
+      {extraContent}
+    </PageSectionDiv>
+    {body}
+  </PageSection>
 );
 
 export default Section;
