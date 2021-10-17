@@ -8,7 +8,6 @@ import Navigation from "./Navigation";
 export default () => (
     <HashRouter>
         <Navigation />
-
         <Switch>
             <Route path={toTask()}>
                 <TaskPage />
@@ -23,6 +22,5 @@ export default () => (
                 <Redirect to={toTasks()} />
             </Route>
         </Switch>
-
     </HashRouter>
 );
